@@ -1,32 +1,343 @@
-<!doctype html>
-<html lang="ept-br">
+<!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfólio Carlos Junior</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-   <link rel="stylesheet" href="assets/css/styles.css"> 
+    <script src="animate-onsscroll.js" defer></script>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="animate-on-scroll.css">
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Carlos Junior - Fotógrafo & Videomaker</title>
 </head>
 
-<body class="bg-dark text-white">
-  <main>
-    <div class="container text-center">
-      <h1>Sejam bem vindos!</h1>
-      <p>Em breve novas atualizações em meu portfólio</p>
-      <img class="img" src="assets/img/pagina_em_manutencao.png" alt="">
-    </div>
-  
-  </main>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary position-fixed w-100">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <strong>Carlos Junior</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#about">Sobre Mim</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#services">Serviços</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#portfolio">Portfólio</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#testimonials">Depoimentos</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="d-flex flex-column justify-content-center text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h1 class="animate from-right">
+                        <strong>Carlos Junior</strong>
+                    </h1>
+                    <p class="py-4 animate from-right">
+                        Seja bem-vindo ao meu portfólio! Sou Carlos Junior, fotógrafo e videomaker de Manaus, Amazonas,
+                        apaixonado por capturar momentos e contar histórias por meio das lentes. Com 6 anos de
+                        experiência, trabalho principalmente na capital amazonense, especializado em fotografar modelos,
+                        roupas e ambientes. Além disso, produzo vídeos institucionais, ajudando marcas e empresas a
+                        comunicarem sua essência com qualidade e impacto visual. Explore meu trabalho e permita-me
+                        transformar suas ideias em imagens inesquecíveis!
+                    </p>
+                    <a href="#services" class="btn btn-outline-light btn-lg">
+                        <strong>Saiba mais</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sobre Mim -->
+    <section class="bg-light" id="about">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                    <h2 class="mb-4 mb-md-5 fs-1 animate from-left">
+                        <strong>Sobre Mim</strong>
+                    </h2>
+                    <p class="animate from-left">Com uma paixão inabalável pela arte da fotografia e produção de vídeos,
+                        dedico-me a capturar a essência única de cada momento e projeto. Minha jornada começou há seis
+                        anos, e desde então, tenho aprimorado minhas habilidades para oferecer resultados que não apenas
+                        atendem, mas superam as expectativas dos meus clientes.</p>
+                    <p class="animate from-left">Em Manaus, tenho a oportunidade de trabalhar em diversos ambientes
+                        vibrantes, desde estúdios de moda até eventos corporativos, sempre buscando a melhor composição
+                        e iluminação para cada cenário. Meu objetivo é contar histórias visuais que ressoem e inspirem.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="https://hiyosuta.com/img/top3.jpg" class="img-fluid shadow animate from-right"
+                        alt="Foto de Carlos Junior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="bg-light" id="services">
+        <div class="container">
+            <div class="row g-4 py-5">
+                <h2 class="text-center mb-4 mb-md-5 fs-1">
+                    <strong>Serviços</strong>
+                </h2>
+
+                <div class="col-md-4">
+                    <div class="card bg-dark text-light shadow p-4">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">
+                                <strong>Fotografia de Moda</strong>
+                            </h5>
+                            <p class="card-text text-center my-4">Capturo a beleza e a essência de modelos e roupas,
+                                criando imagens que destacam o estilo e a personalidade de cada cliente.</p>
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-light shadow" href="#">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card bg-dark text-light shadow p-4">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">
+                                <strong>Fotografia de Ambientes</strong>
+                            </h5>
+                            <p class="card-text text-center my-4">Especializado em capturar espaços e ambientes, seja
+                                para decoração, imobiliárias ou projetos comerciais, com atenção aos detalhes e à
+                                composição.</p>
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-light shadow" href="#">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card bg-dark text-light shadow p-4">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">
+                                <strong>Vídeos Institucionais</strong>
+                            </h5>
+                            <p class="card-text text-center my-4">Produzo vídeos que comunicam a essência e os valores
+                                da sua empresa, projetando uma imagem profissional e impactante para o seu público.</p>
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-light shadow" href="#">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section class="bg-dark text-light" id="portfolio">
+        <div class="container py-5">
+            <h2 class="text-center mb-4 mb-md-5 fs-1">
+                <strong>Portfólio</strong>
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="https://th.bing.com/th/id/R.e9a3a45936db3a59603bba6db7a12737?rik=tLV%2fj9vyBGU%2bYw&pid=ImgRaw&r=0"
+                            class="card-img-top img-fluid" alt="Projeto de Fotografia de Moda"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Fotografia de Moda</h5>
+                            <p class="card-text">Sessão de fotos para a coleção primavera/verão 2024, destacando as
+                                últimas tendências de moda.</p>
+                            <a href="#" class="btn btn-light">Ver Mais</a>
+                        </div>
+                    </div>
+                </div>
 
 
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="https://th.bing.com/th/id/OIP.IIhDXtlj95FiTPvhPrvn1AAAAA?rs=1&pid=ImgDetMain"
+                            alt="Vídeo Institucional" class="card-img-top img-fluid"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Vídeo Institucional</h5>
+                            <p class="card-text">Produção de vídeo institucional para a empresa XYZ, destacando seus
+                                valores e serviços.</p>
+                            <a href="#" class="btn btn-light">Ver Mais</a>
+                        </div>
+                    </div>
+                </div>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="https://th.bing.com/th/id/OIP.Wa1GYt3ia-wdx2BKHmsFgQHaE8?rs=1&pid=ImgDetMain"
+                            class="card-img-top img-fluid" alt="Fotografia de Ambientes"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Fotografia de Ambientes</h5>
+                            <p class="card-text">Captura de ambientes internos para decoração de interiores e
+                                publicidade imobiliária.</p>
+                            <a href="#" class="btn btn-light">Ver Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Depoimentos -->
+    <section class="container py-5" id="testimonials">
+        <div class="row g-4">
+            <h2 class="text-center mb-4 mb-md-5 fs-1">
+                <strong>Depoimentos de Clientes</strong>
+            </h2>
+
+            <div class="col-md-4">
+                <div class="card bg-dark text-light shadow p-4">
+                    <div class="card-body text-center">
+                        <img src="https://th.bing.com/th/id/OIP.SBOPUimsJRQmmmI9oeSdbgHaGy?w=750&h=688&rs=1&pid=ImgDetMain"
+                            alt="Cliente Detona Ralph" class="img-thumbnail mb-3 img-fluid"
+                            style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;">
+                        <h5 class="card-title mt-2 fs-4">
+                            <strong>Detona Ralph</strong>
+                        </h5>
+                        <p class="card-text my-4">"Carlos capturou nossa coleção com uma sensibilidade incrível. As
+                            fotos ficaram perfeitas e realmente destacaram nosso trabalho."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card bg-dark text-light shadow p-4">
+                    <div class="card-body text-center">
+                        <img src="https://th.bing.com/th/id/R.d9642e756cbfff1ad8a1b68862b25515?rik=ne272Jfo0JZZHA&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-ironman-tony-starkironmansuperheromarvel-comicscharactermarvel-studiosrobert-downey-jrtony-stark-1701528611466k6kco.png&ehk=aAEW6OQCVfCSBHPJ1ykqyXlRtMdZk%2bfSM2j%2fLtDpois%3d&risl=&pid=ImgRaw&r=0"
+                            alt="Cliente Lara Conor" class="img-thumbnail mb-3 img-fluid"
+                            style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;">
+                        <h5 class="card-title mt-2 fs-4">
+                            <strong>Tony Stark</strong>
+                        </h5>
+                        <p class="card-text my-4">"O vídeo institucional produzido por Carlos deu à nossa empresa uma
+                            imagem profissional e impactante. Recomendo fortemente seus serviços."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card bg-dark text-light shadow p-4">
+                    <div class="card-body text-center">
+                        <img src="https://th.bing.com/th/id/R.6980d4a5082dcb83b2fba606198f295f?rik=Zqi1PznIwuHLZg&pid=ImgRaw&r=0"
+                            alt="Cliente James Bond" class="img-thumbnail mb-3 img-fluid"
+                            style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;">
+                        <h5 class="card-title mt-2 fs-4">
+                            <strong>Spider Man</strong>
+                        </h5>
+                        <p class="card-text my-4">"As fotografias de ambientes realizadas por Carlos superaram nossas
+                            expectativas. A atenção aos detalhes fez toda a diferença."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="bg-dark text-light" id="contact">
+        <div class="container py-5">
+            <h2 class="text-center mb-4 mb-md-5 fs-1">
+                <strong>Entre em Contato</strong>
+            </h2>
+
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center py-5">
+                    <p class="fs-5">
+                        <strong>Endereço: </strong>Rua sem nome 0001, São Jorge, Manaus - AM
+                    </p>
+                    <p class="fs-5">
+                        <strong>Email: </strong>carlosjunior@fotografia.com
+                    </p>
+                    <p class="fs-5">
+                        <strong>Telefone: </strong>+55 92 90000-0000
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">
+                                <strong class="fs-5">Nome Completo</strong>
+                            </label>
+                            <input type="text" class="form-control shadow" id="name" aria-describedby="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">
+                                <strong class="fs-5">Seu E-mail</strong>
+                            </label>
+                            <input type="email" class="form-control shadow" id="email" aria-describedby="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">
+                                <strong class="fs-5">Telefone</strong>
+                            </label>
+                            <input type="tel" class="form-control shadow" id="phone" aria-describedby="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">
+                                <strong class="fs-5">Sua Mensagem</strong>
+                            </label>
+                            <textarea class="form-control shadow" id="message" rows="3"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-center mt-5">
+                            <button type="submit" class="btn btn-dark shadow">
+                                <strong class="fs-5">Enviar</strong>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary">
+        <p class="text-center py-4 mb-0">Desenvolvido por <a href="https://alderjunio.github.io/pagina-de-portifolio/"
+                target="_blank">Alder Junio</a>
+        </p>
+    </footer>
+
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/js_bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
