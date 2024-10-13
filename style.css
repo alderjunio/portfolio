@@ -1,3 +1,23 @@
+/* Remover borda e cor padrão do botão */
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: #fff !important; /* Mantém a cor branca se necessário */
+    background: transparent; /* Se desejar que o fundo seja transparente */
+}
+
+/* Remover outline e box-shadow no estado de foco */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
