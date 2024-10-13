@@ -91,10 +91,10 @@ footer p{
 /* Media Queries para telas menores */
 @media (max-width: 768px) {
     /* Ajustar o header */
-    header {
+    .row {
         height: auto; /* Remove a altura fixa */
         justify-content: flex-start; /* Alinha o conteúdo para o topo */
-        padding-top: 50px; /* Espaço acima do conteúdo */
+        padding-top: 0px; /* Espaço acima do conteúdo */
         padding-bottom: 100px; /* Espaço abaixo para evitar sobreposição */
     }
 
