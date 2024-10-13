@@ -88,10 +88,40 @@ footer p{
 }
 
 
+/* Media Queries para telas menores */
 @media (max-width: 768px) {
+    /* Ajustar o header */
     header {
-        align-items: flex-start;
-        padding-top: 50px; /* Ajuste este valor conforme necessário */
+        height: auto; /* Remove a altura fixa */
+        justify-content: flex-start; /* Alinha o conteúdo para o topo */
+        padding-top: 50px; /* Espaço acima do conteúdo */
+        padding-bottom: 100px; /* Espaço abaixo para evitar sobreposição */
+    }
+
+    /* Ajustar o posicionamento dos ícones fixos */
+    .whats {
+        bottom: 20px; /* Reduz a distância do fundo */
+        right: 20px; /* Reduz a distância da direita */
+    }
+
+    .arrow-up {
+        bottom: 20px; /* Reduz a distância do fundo */
+        left: 20px; /* Reduz a distância da esquerda */
+    }
+
+    /* Reduzir o tamanho dos ícones para dispositivos móveis */
+    .whats img {
+        width: 40px; /* Tamanho menor para WhatsApp */
+    }
+
+    .arrow-up i {
+        font-size: 30px; /* Tamanho menor para a seta */
+    }
+
+    /* Opcional: Ajustar o alinhamento do conteúdo dentro do header */
+    header .container .row .col-12.col-lg-6 {
+        padding-right: 15px; /* Reduz padding se necessário */
+        padding-left: 15px; /* Reduz padding se necessário */
     }
 }
 
