@@ -22,3 +22,7 @@
     opacity: 1;
 }
 
+/* Adicione overflow: hidden aos contêineres que envolvem elementos animados */
+.section-animate {
+    overflow: hidden;
+}
